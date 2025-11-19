@@ -8,12 +8,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <title>Nikel</title>
 </head>
-<body>
+<body id="login">
     <main>
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div>
+            <div class="row vh-100">
+                <div class="col d-flex justify-content-center my-5 flex-column ">
+                    <div class="text-login">
                         <p>
                             Organize suas finanças de uma forma fácil.
                         </p>
@@ -24,57 +24,63 @@
                             Economize e atinja seus objetivos.
                         </p>
                     </div>
-                    <div>
-                        <img src="./assets/images/pocket.png" alt="imagem de uma carteira de dinheiro, com um celular e moedas" srcset="">
-                        <img src="./assets/images/coins.png" alt="moedas" srcset="">
+                    <div class="text-center">
+                        <img src="./assets/images/pocket.png" alt="imagem de uma carteira de dinheiro, com um celular e moedas" class="img-fluid">
+                        <img src="./assets/images/coins.png" alt="moedas" class="img-fluid d-none d-md-inline coins">
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col d-flex justify-content-center my-5 flex-column">
                     <div class="container">
                         
                         <div class="row">
                             <div class="col">
-                                <img src="./assets/images/nikel-logo.png" alt="logo da aplicação nikel" class="img-fluid" srcset="">
-                            </div>
-                            
-                            <div class="col">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite aqui o seu E-mail">
-                                        <div id="emailHelp" class="form-text">Utilize seu e-mail para realizar o login.</div>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleInputPassword1" class="form-label">Senha</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite aqui a sua senha">
-                                    </div>
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Permanecer logado</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Entrar</button>
-                                </form>
+                                <div class="text-center mb-3">
+                                    <img src="./assets/images/nikel-logo.png" alt="logo da aplicação nikel" class="img-fluid">
+                                </div>
+
+                                <div class="col">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite aqui o seu E-mail">
+                                            <div id="emailHelp" class="form-text">Utilize seu e-mail para realizar o login.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Senha</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite aqui a sua senha">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Permanecer logado</label>
+                                        </div>
+                                        <button type="submit" class="btn button-login">Entrar</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col">
-                                <p>
-                                    Ainda não tem conta? <a href="#">Criar uma conta</a>
+                                <p class="text-center mt-2 form-text">
+                                    Ainda não tem conta? <span class="link-default">Criar uma conta</span>
                                 </p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col">
-                                <img src="./assets/images/codai-logo.png" alt="logo da codai" srcset="">
+                                <div class="text-center mt-5">
+                                    <img src="./assets/images/codai-logo.png" alt="logo da codai" srcset="">
+                                </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col">
-                                <img src="./assets/images/growdev-logo.png" alt="logo da growdev" srcset="">
+                                <div class="text-center">
+                                    <img src="./assets/images/growdev-logo.png" alt="logo da growdev" srcset="">
+                                </div>
                             </div>
                         </div>
                     </div>
