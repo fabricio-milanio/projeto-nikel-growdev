@@ -56,6 +56,10 @@ header {
     color: #ffffff;
 }
 
+.button-cancel {
+    border-radius: 10px;
+}
+
 .link-default {
     color: #4e0070;
     cursor: pointer;
