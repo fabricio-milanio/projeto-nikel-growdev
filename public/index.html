@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/styles.css">
     <title>Nikel</title>
 </head>
@@ -39,19 +40,19 @@
                                 </div>
 
                                 <div class="col">
-                                    <form>
+                                    <form id="login-form">
                                         <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">Email</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite aqui o seu E-mail">
+                                            <label for="email-input" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp" placeholder="Digite aqui o seu E-mail">
                                             <div id="emailHelp" class="form-text">Utilize seu e-mail para realizar o login.</div>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="exampleInputPassword1" class="form-label">Senha</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite aqui a sua senha">
+                                            <label for="password-input" class="form-label">Senha</label>
+                                            <input type="password" class="form-control" id="password-input" placeholder="Digite aqui a sua senha">
                                         </div>
                                         <div class="mb-3 form-check">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                            <label class="form-check-label" for="exampleCheck1">Permanecer logado</label>
+                                            <input type="checkbox" class="form-check-input" id="session-check">
+                                            <label class="form-check-label" for="session-check">Permanecer logado</label>
                                         </div>
                                         <button type="submit" class="btn button-login">Entrar</button>
                                     </form>
@@ -100,17 +101,17 @@
                 <div class="modal-body">
                     <div class="mb-3">
                         <label for="email-create-input" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email-create-input" aria-describedby="emailHelp" placeholder="Digite aqui o seu E-mail">
+                        <input type="email" class="form-control" id="email-create-input" aria-describedby="emailHelp" placeholder="Digite aqui o seu E-mail" required>
                         <div id="emailHelp" class="form-text">Utilize seu e-mail para criar a conta.</div>
                     </div>
                     <div class="mb-3">
                         <label for="password-create-input" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="password-create-input" placeholder="Digite aqui a sua senha">
+                        <input type="password" class="form-control" id="password-create-input" placeholder="Digite aqui a sua senha" required>
                         <div id="emailHelp" class="form-text">Utilize uma senha fácil de lembrar e anote para não esquecer.</div>
                     </div>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary button-cancel" data-bs-dismiss="modal">Cencelar</button>
+            <button type="button" class="btn btn-secondary button-cancel" data-bs-dismiss="modal">Cancelar</button>
             <button type="submit" class="btn button-default">Criar</button>
         </div>
             </form>
@@ -119,6 +120,6 @@
     </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script type="module" src="./js/index.js"></script>
 </body>
 </html>
