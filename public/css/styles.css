@@ -108,6 +108,7 @@ header {
 .button-icon {
     background-color: transparent;
     border: 1px solid transparent;
+    padding: 0 5px;
     cursor: pointer;
 }
 

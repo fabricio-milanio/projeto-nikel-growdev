@@ -38,6 +38,7 @@ function checkLogged() {
     getCashIn();
     getCashOut();
     getTotal();
+    checkShowAllButton();
 }
 
 function logout() {
@@ -75,6 +76,7 @@ document.getElementById("transaction-form").addEventListener("submit", function(
     getCashIn();
     getCashOut();
     getTotal();
+    checkShowAllButton();
     
     alert("Salvo com sucesso.");
 });
@@ -109,6 +111,17 @@ function removeItem(index) {
         getCashIn();
         getCashOut();
         getTotal();
+        checkShowAllButton();
+    }
+}
+
+function checkShowAllButton() {
+    const showAllBtn = document.getElementById("transaction-button");
+    
+    if (data.transactions.length === 0) {
+        showAllBtn.style.display = "none";
+    } else {
+        showAllBtn.style.display = "inline-block";
     }
 }
 
@@ -158,7 +171,7 @@ function getCashIn() {
         }
         document.getElementById("cash-in-list").innerHTML = cashInHtml;
     } else {
-        document.getElementById("cash-in-list").innerHTML = ``;
+        document.getElementById("cash-in-list").innerHTML = `<p class="mb-3 text-muted">Nenhuma entrada cadastrada.</p>`;
     }
 }
 
@@ -208,7 +221,7 @@ function getCashOut() {
         }
         document.getElementById("cash-out-list").innerHTML = cashOutHtml;
     } else {
-        document.getElementById("cash-out-list").innerHTML = ``;
+        document.getElementById("cash-out-list").innerHTML = `<p class="mb-3 text-muted">Nenhuma saída cadastrada.</p>`;
     }
 }
 
