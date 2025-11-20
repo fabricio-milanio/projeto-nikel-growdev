@@ -171,7 +171,7 @@ function getCashIn() {
         }
         document.getElementById("cash-in-list").innerHTML = cashInHtml;
     } else {
-        document.getElementById("cash-in-list").innerHTML = `<p class="mb-3 text-muted">Nenhuma entrada cadastrada.</p>`;
+        document.getElementById("cash-in-list").innerHTML = `<p class="mb-3 text-muted">Nenhuma entrada cadastrada até o momento.</p>`;
     }
 }
 
@@ -221,7 +221,7 @@ function getCashOut() {
         }
         document.getElementById("cash-out-list").innerHTML = cashOutHtml;
     } else {
-        document.getElementById("cash-out-list").innerHTML = `<p class="mb-3 text-muted">Nenhuma saída cadastrada.</p>`;
+        document.getElementById("cash-out-list").innerHTML = `<p class="mb-3 text-muted">Nenhuma saída cadastrada até o momento.</p>`;
     }
 }
 
