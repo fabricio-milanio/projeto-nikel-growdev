@@ -18,7 +18,7 @@
                 </a>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <div class="d-flex">
+                    <div class="d-flex menu">
                         <a href="home.html">
                         <button type="button" class="btn">
                             <i class="bi bi-house-door-fill fs-4"></i>
@@ -35,8 +35,8 @@
                         <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi bi-person-circle fs-4"></i>
                         </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="index.html">Sair</a></li>
+                        <ul class="dropdown-menu logout">
+                            <li><button class="dropdown-item" id="button-logout">Sair</button></li>
                         </ul>
                     </div>
 
@@ -48,7 +48,7 @@
         </nav>
     </header>
     <main>
-        <div class="container-lg">
+        <div class="container-lg mb-5">
             <div class="row">
                 <div class="col d-flex mt-4 justify-content-start align-items-center">
                     <i class="bi bi-currency-exchange color-primary icon-detail"></i>
@@ -75,14 +75,8 @@
                                         <th scope="col">Descrição</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                        <th scope="row">10/01/2023</th>
-                                        <td>R$100,00</td>
-                                        <td>Saída</td>
-                                        <td>Jantar</td>
-                                        </tr>
-                                        
+                                    <tbody id="transactions-list">
+                                                                                
                                     </tbody>
                                 </table>
                             </div>
@@ -109,7 +103,7 @@
                 <div class="modal-body">
                     <div class="mb-3">
                         <label for="value-input" class="form-label">Valor</label>
-                        <input type="number" class="form-control" id="value-input" aria-describedby="emailHelp" placeholder="Insira o valor da transação">
+                        <input type="number" step="any" class="form-control" id="value-input" aria-describedby="emailHelp" placeholder="Insira o valor da transação">
                     </div>
                     <div class="mb-3">
                         <label for="description-input" class="form-label">Descrição</label>
@@ -141,5 +135,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./js/transactions.js"></script>
 </body>
 </html>
