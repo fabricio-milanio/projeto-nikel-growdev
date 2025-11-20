@@ -104,3 +104,15 @@ header {
 .menu {
     margin-right: 20px;
 }
+
+.button-icon {
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.button-icon:hover {
+    background-color: transparent;
+    border: 1px solid #4c79d3;
+    border-radius: 5px;
+}
