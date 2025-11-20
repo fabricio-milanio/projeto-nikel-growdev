@@ -60,6 +60,26 @@ header {
     border-radius: 10px;
 }
 
+.button-float {
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    font-size: 35px;
+    border: 2px solid #4e0070;
+    background-color: #4e0070;
+    color: #ffffff;
+    padding: 0 !important;
+}
+
+.button-float:hover {
+    border: 2px solid #4c79d3;
+    background-color: #ffffff;
+    color: #4c79d3;
+}
+
 .link-default {
     color: #4e0070;
     cursor: pointer;
