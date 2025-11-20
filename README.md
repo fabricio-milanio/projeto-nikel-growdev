@@ -1,6 +1,6 @@
 # Nikel - Controle Financeiro 🪙
 
-Aplicação web de controle financeiro desenvolvida como parte do portfólio para a jornada de formação na área de tecnologia. O projeto simula uma conta digital onde é possível lançar entradas e saídas, visualizar o saldo e gerenciar o histórico de transações.
+Aplicação web de controle financeiro desenvolvida para o processo seletivo do programa **Veste Tech** conduzido pela **Growdev**. O projeto simula uma conta digital onde é possível lançar entradas e saídas, visualizar o saldo e gerenciar o histórico de transações.
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -22,9 +22,9 @@ Aplicação web de controle financeiro desenvolvida como parte do portfólio par
 ## 🔧 Como executar
 
 1.  Faça o clone deste repositório ou baixe os arquivos.
-2.  Abra o arquivo `index.html` em seu navegador de preferência.
+2.  Abra o arquivo `index.html` localmente ou **acesse a versão online neste link:** [https://projeto-nikel-growdev.vercel.app/](https://projeto-nikel-growdev.vercel.app/)
 3.  Crie uma conta fictícia e comece a testar!
 
 ---
 
-Desenvolvido por **Fabrício Milanio** com ❤️ para o processo seletivo do programa **Veste Tech** conduzido pela **Growdev**.
+Desenvolvido por **Fabrício Milanio** com ❤️.
